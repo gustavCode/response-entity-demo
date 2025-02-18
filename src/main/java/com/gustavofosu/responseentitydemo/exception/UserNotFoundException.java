@@ -7,5 +7,9 @@ package com.gustavofosu.responseentitydemo.exception;
     @project : response-entity-demo
 */
 
-public record ErrorResponse(String code, String message) {
+public class UserNotFoundException extends RuntimeException {
+
+    public UserNotFoundException(String message) {
+        super(message);
+    }
 }
